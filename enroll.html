@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll - Elevate Academy</title>
+  <meta name="description" content="Enroll your child in an Elevate Academy course or tutoring programme.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="logo" href="/">Elevate <span>Academy</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="/tutoring/">Tutoring</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+            <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn-accent" href="/enroll.html">Enroll</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero hero--page" style="background-image:url('images/hero/enroll.jpg')">
+      <div class="hero-content">
+        <h1>Enroll</h1>
+        <p>Tell us a little about your child and what you are looking for. We will get back to you to confirm the details.</p>
+      </div>
+    </section>
+
+    <section class="section section--form">
+
+      <div class="tabs" role="tablist" aria-label="Enrollment type">
+        <button class="tab active" type="button" role="tab" data-tab="courses" aria-selected="true" aria-controls="panel-courses">Courses</button>
+        <button class="tab" type="button" role="tab" data-tab="tutoring" aria-selected="false" aria-controls="panel-tutoring">Tutoring</button>
+      </div>
+
+      <!-- COURSE ENROLLMENT -->
+      <div class="tab-panel form-card" id="panel-courses" role="tabpanel">
+        <h2>Course enrollment</h2>
+        <form class="form" data-form-type="course-enrollment" novalidate>
+
+          <h3>Parent or guardian</h3>
+          <div class="form-row">
+            <label>Full name
+              <input type="text" name="parentName" required autocomplete="name">
+            </label>
+            <label>Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <label>Phone / WhatsApp
+            <input type="tel" name="phone" required autocomplete="tel">
+          </label>
+
+          <h3>Student</h3>
+          <div class="form-row">
+            <label>Student's name
+              <input type="text" name="studentName" required>
+            </label>
+            <label>Student's age
+              <input type="number" name="studentAge" min="10" max="18" required>
+            </label>
+          </div>
+
+          <h3>Course</h3>
+          <label>Which course are you interested in?
+            <select name="course" required>
+              <option value="">Choose one</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Data Analytics">Data Analytics</option>
+              <option value="Technology &amp; Digital Skills">Technology &amp; Digital Skills</option>
+              <option value="Not sure yet">Not sure yet, I would like advice</option>
+            </select>
+          </label>
+          <p class="small">Our Online Safety foundation is included with every course.</p>
+          <label>Student's current experience
+            <select name="experience" required>
+              <option value="">Choose one</option>
+              <option value="Complete beginner">Complete beginner</option>
+              <option value="Some experience">Some experience</option>
+              <option value="Experienced">Experienced</option>
+            </select>
+          </label>
+          <label>Preferred schedule
+            <select name="schedule">
+              <option value="No preference">No preference</option>
+              <option value="Saturdays">Saturdays</option>
+              <option value="Weekday afternoons">Weekday afternoons</option>
+              <option value="Weekday evenings">Weekday evenings</option>
+            </select>
+          </label>
+          <label>Anything else we should know? (optional)
+            <textarea name="message" rows="4"></textarea>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="consent" value="Yes" required>
+            <span>I am the student's parent or guardian, and I agree to be contacted about this enrollment.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Submit enrollment</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- TUTORING ENROLLMENT -->
+      <div class="tab-panel form-card" id="panel-tutoring" role="tabpanel" hidden>
+        <h2>Tutoring enrollment</h2>
+        <form class="form" data-form-type="tutoring-enrollment" novalidate>
+
+          <h3>Parent or guardian</h3>
+          <div class="form-row">
+            <label>Full name
+              <input type="text" name="parentName" required autocomplete="name">
+            </label>
+            <label>Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <label>Phone / WhatsApp
+            <input type="tel" name="phone" required autocomplete="tel">
+          </label>
+
+          <h3>Student</h3>
+          <div class="form-row">
+            <label>Student's name
+              <input type="text" name="studentName" required>
+            </label>
+            <label>Student's age
+              <input type="number" name="studentAge" min="5" max="19" required>
+            </label>
+          </div>
+          <label>Current year or grade
+            <input type="text" name="grade" required>
+          </label>
+
+          <h3>Tutoring needs</h3>
+          <label>Programme
+            <select name="programme" required>
+              <option value="">Choose one</option>
+              <option value="Cambridge Lower Secondary">Cambridge Lower Secondary</option>
+              <option value="IGCSE">IGCSE</option>
+              <option value="IB MYP">IB MYP</option>
+              <option value="IB DP">IB DP</option>
+              <option value="A Level">A Level</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </label>
+          <label>Subject(s) needed
+            <input type="text" name="subjects" required placeholder="For example: Mathematics, Science">
+          </label>
+          <label>What does your child need help with?
+            <textarea name="needs" rows="4" required></textarea>
+          </label>
+          <label>Preferred times
+            <select name="schedule">
+              <option value="Flexible">Flexible</option>
+              <option value="Weekday afternoons">Weekday afternoons</option>
+              <option value="Weekday evenings">Weekday evenings</option>
+              <option value="Weekends">Weekends</option>
+            </select>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="consent" value="Yes" required>
+            <span>I am the student's parent or guardian, and I agree to be contacted about this enrollment.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Submit enrollment</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo logo--light" href="/">Elevate <span>Academy</span></a>
+        <p>Turning education into practical skills and real opportunities.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/tutoring/">Tutoring</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: hello@yourdomain.com</li>
+          <li>Phone: +250 000 000 000</li>
+          <li>Location: Kigali, Rwanda</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Elevate Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/enroll.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

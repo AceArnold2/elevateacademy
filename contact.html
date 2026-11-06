@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Elevate Academy</title>
+  <meta name="description" content="Get in touch with Elevate Academy with questions about courses, tutoring, or working with us.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="logo" href="/">Elevate <span>Academy</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="/tutoring/">Tutoring</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+            <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn-accent" href="/enroll.html">Enroll</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero hero--page" style="background-image:url('images/hero/contact.jpg')">
+      <div class="hero-content">
+        <h1>Contact us</h1>
+        <p>Questions about courses or tutoring, or interested in working with us? We would love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="contact-layout">
+
+        <div class="form-card">
+          <h2>Send us a message</h2>
+          <form id="contact-form" class="form" data-form-type="contact" novalidate>
+            <div class="form-row">
+              <label>Your name
+                <input type="text" name="name" required autocomplete="name">
+              </label>
+              <label>Email
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+            </div>
+            <label>Phone / WhatsApp (optional)
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>What is this about?
+              <select name="topic" required>
+                <option value="">Choose one</option>
+                <option value="Courses">Courses</option>
+                <option value="Tutoring">Tutoring</option>
+                <option value="Working with us">Working with us</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </label>
+            <label>Message
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="note contact-details">
+          <h3>Get in touch</h3>
+          <!-- PLACEHOLDERS: replace with real details -->
+          <ul class="contact-list">
+            <li><strong>Email</strong><br>hello@yourdomain.com</li>
+            <li><strong>Phone / WhatsApp</strong><br>+250 000 000 000</li>
+            <li><strong>Location</strong><br>Kigali, Rwanda</li>
+          </ul>
+          <p class="small">Ready to sign up? <a href="/enroll.html">Go to enrollment</a>.</p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo logo--light" href="/">Elevate <span>Academy</span></a>
+        <p>Turning education into practical skills and real opportunities.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/tutoring/">Tutoring</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: hello@yourdomain.com</li>
+          <li>Phone: +250 000 000 000</li>
+          <li>Location: Kigali, Rwanda</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Elevate Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
